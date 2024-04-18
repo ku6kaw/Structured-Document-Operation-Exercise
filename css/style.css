@@ -1,0 +1,157 @@
+/* 基本的なスタイル設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #f4f4f4;
+    display: flex; 
+    flex-direction: column; 
+    min-height: 70vh;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.content {
+    text-align: center;
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.links {
+    margin: 20px 0;
+}
+
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: auto;
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+    .link-button {
+        padding: 50px 120px;
+        font-size: 35px;
+        border-radius: 35px;
+    }
+}
+
+.link-button:hover {
+    background-color: #ddd;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #ccc;
+    width: 60%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.top-page {
+    margin: 20px 0;
+}
+
+.top-page-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* あるいはflex-startで左揃え */
+    margin: 20px;
+    gap: 20px; /* 画像とテキストの間隔 */
+}
+
+.profile-image, .profile-text {
+    flex-basis: 50%; /* 各アイテムが占めるベースの割合 */
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+    }
+    .profile-image, .profile-text {
+        flex-basis: 100%;
+    }
+}
+
+.link-list {
+    list-style-type: none; /* 標準の番号を非表示にする */
+    padding: 0; /* リストのパディングを削除 */
+}
+
+.link-list li {
+    display: flex; /* フレックスボックスを使う */
+    justify-content: center; /* 水平方向の中心揃え */
+    margin-bottom: 10px; /* リスト項目間のマージン */
+}
+
+.tech-stack .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* アイコン間のスペース */
+    padding: 20px;
+}
+
+.tech-stack img {
+    height: 100px; /* アイコンのサイズを調整 */
+    width: auto; /* アスペクト比を維持 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .tech-stack img {
+        height: 80px; /* スクリーンサイズによってサイズを変更 */
+    }
+}
