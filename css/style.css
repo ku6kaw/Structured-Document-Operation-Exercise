@@ -1,11 +1,11 @@
-/* 基本的なスタイル設定 */
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   color: #333;
-  background: #f4f4f4;
+  background: #f4f4f4 url('https://thumb.ac-illust.com/4d/4d0c8374564c8ed0f1b9e2426dedb8cc_t.jpeg') no-repeat center center fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   min-height: 70vh;
@@ -107,14 +107,14 @@ footer {
 .profile-section {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* あるいはflex-startで左揃え */
+  justify-content: space-around;
   margin: 20px;
-  gap: 20px; /* 画像とテキストの間隔 */
+  gap: 20px;
 }
 
 .profile-image,
 .profile-text {
-  flex-basis: 50%; /* 各アイテムが占めるベースの割合 */
+  flex-basis: 50%;
 }
 
 @media (max-width: 768px) {
@@ -128,32 +128,32 @@ footer {
 }
 
 .link-list {
-  list-style-type: none; /* 標準の番号を非表示にする */
-  padding: 0; /* リストのパディングを削除 */
+  list-style-type: none;
+  padding: 0;
 }
 
 .link-list li {
-  display: flex; /* フレックスボックスを使う */
-  justify-content: center; /* 水平方向の中心揃え */
-  margin-bottom: 10px; /* リスト項目間のマージン */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .tech-stack .icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* アイコン間のスペース */
+  gap: 20px;
   padding: 20px;
 }
 
 .tech-stack img {
-  height: 100px; /* アイコンのサイズを調整 */
-  width: auto; /* アスペクト比を維持 */
+  height: 100px;
+  width: auto;
 }
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
   .tech-stack img {
-    height: 80px; /* スクリーンサイズによってサイズを変更 */
+    height: 80px;
   }
 }
