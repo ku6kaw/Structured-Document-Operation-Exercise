@@ -1,14 +1,9 @@
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   color: #333;
   background: #f4f4f4 url('https://thumb.ac-illust.com/4d/4d0c8374564c8ed0f1b9e2426dedb8cc_t.jpeg') no-repeat center center fixed;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  min-height: 70vh;
 }
 
 header {
@@ -18,19 +13,8 @@ header {
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-}
-
 .content {
-  text-align: center;
-  margin: 10px;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 60px;
 }
 
 .links {
